@@ -6,3 +6,13 @@ img {
   display: flex;
   width: 20%;
 }
+
+#text-area {
+  display: flex;
+  width: 25%;
+
+}
+
+li {
+  list-style-type: none;
+}
