@@ -1,10 +1,9 @@
-var orm = require("../config/orm.js");
+const orm = require("../config/orm.js");
 
-var burgers = {
+const burgers = {
   selectAll: function (cb) {
     orm.selectAll("burgers", function (res) {
-      var data = res
-      cb(data)
+      cb(res);
     });
   },
 
