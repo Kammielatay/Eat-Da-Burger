@@ -20,13 +20,9 @@ app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
 // Routes
-var routes = require("./controllers/burgers_controller");
+var routes = require("./controllers/burgers_controller.js");
 
 app.use(routes);
-
-// app.get("/", function (req, res) {
-//   res.render("index"); // you want to pass in some data as tge second parameter
-// });
 
 
 // Start our server so that it can begin listening to client requests.

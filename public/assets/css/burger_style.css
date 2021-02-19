@@ -9,10 +9,22 @@ img {
 
 #text-area {
   display: flex;
-  width: 25%;
+  width: 40%;
 
 }
 
 li {
+  background-color: azure;
   list-style-type: none;
+  padding: 5px;
+  margin:2px;
+  
+}
+
+.change-devoured[data-newdevoured='true']{
+  background-color: red;
+}
+
+form, .container {
+  margin-top: 30px;
 }

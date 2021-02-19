@@ -1,38 +1,40 @@
-<h1 class="text-center">Welcome to Eat-Da-Burger!</h1>
-
-<img src="assets/img/burger.png" class="rounded mx-auto d-block" alt="Photo-of-Burger">
-
-<div class="container text-center">
-  <div class="row gx-5">
-    <div class="col ">
-      <ul>
-        {{#each burger}}
+<main>
+  <h1 class="text-center">Welcome to Eat-Da-Burger!</h1>
+  
+  <img src="assets/img/burger.png" class="rounded mx-auto d-block" alt="Photo-of-Burger">
+  
+  <div class="container text-center">
+    <div class="row gx-5">
+      <div class="col-md-6">
+        <ul>
+          {{#each burger}}
           {{#unless devoured}}
-            {{> burger/burger-block devoured=true}}
+          {{> burger/burger-block devoured=false}}
           {{/unless}}
-        {{/each}}
-      </ul>
+          {{/each}}
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <ul>
+          {{#each burger}}
+          {{#if devoured}}
+          {{> burger/burger-block devoured=true}}
+          {{/if}}
+          {{/each}}
+        </ul>
+      </div>
     </div>
-    <div class="col">
-      hkjigigo
-      {{!-- <ul>
-        {{#each burger}}
-          {{#unless devoured}}
-            {{> burger/burger-block devoured=false}}
-          {{/unless}}
-        {{/each}}
-      </ul> --}}
-    </div>
-  </div>
+  
+    <form class="create-form">
+      <div id="text-area" class="mb-3 rounded mx-auto d-block">
+        <textarea type="text" id="new-burger" name="burger_name"></textarea>
+        <label for="new-burger" class="form-label text-center">What Burger Would You Like To Add?</label>
+        <button type="submit" class="text-center rounded mx-auto d-block add-burger">Submit!</button>
+      </div>
+    </form>
 
+</main>
 
-
-
-<div id="text-area" class="mb-3 rounded mx-auto d-block">
-  <textarea class="form-control" id="burgerInput" rows="2"></textarea>
-  <label for="burgerInput" class="form-label text-center">What Kind Of Burger Would You Like To Try Today?</label>
-  <br>
-  <button class="text-center rounded mx-auto d-block">Submit!</button>
-</div>
-
-
+<footer class="text-center fixed-bottom">
+<p> &copy;Kameshia Ingram 2021</p>
+</footer>

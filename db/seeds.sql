@@ -2,14 +2,14 @@
 USE burgers_db;
 
 INSERT INTO burgers (burger_name, devoured)
-VALUES ("Big Wave", false);
+VALUES ("McTaken Double Burger", false);
 
 INSERT INTO burgers (burger_name, devoured)
-VALUES ("Hawaiian", false);
+VALUES ("McLovin' Bacon Cheeseburger", false);
 
 INSERT INTO burgers (burger_name, devoured)
-VALUES ("Impossible", true);
+VALUES ("Impossible To Love Single Patty Burger", true);
 
 INSERT INTO burgers (burger_name, devoured)
-VALUES ("Turkey", true);
+VALUES ("McStayMacking Burger", true);
 
